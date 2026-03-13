@@ -1,0 +1,85 @@
+### Read all users (req to protected route)
+GET http://localhost:4000/user-api/users
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkhhcmlzaEBnbWFpbC5jb20iLCJpYXQiOjE3NzMwNjgyNzksImV4cCI6MTc3MzA3MTg3OX0.e4tPduBhG_h8wi737t69tu8wCN0V-0hxbQfoA5A6Ny4; Path=/; HttpOnly; SameSite=Lax
+### Read a user by id
+GET http://localhost:4000/user-api/user
+
+### create new user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"vishnu",
+    "password":"vishnu",
+    "email":"vishnu@gmail.com",
+    "age":19
+}
+
+### user login
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "email":"vishnu@gmail.com",
+    "password":"vishnu"
+}
+
+### Update a user
+PUT http://localhost:4000/user-api/users/69aa98336ad966bfbc13b0fc
+Content-Type: application/json
+
+{
+    "username":"vishnu",
+    "password":"vishnu@123",
+    "email":"vishnu06@gmail.com",
+    "age":19
+}
+
+### Delete a user by id
+DELETE http://localhost:4000/user-api/users/69aa98336ad966bfbc13b0fc
+
+
+### add product to user
+PUT http://localhost:4000/user-api/cart/product-id/69abb4dcee541300ad9e5f5b
+
+
+
+### create a new product
+POST http://localhost:4000/product-api/product
+Content-Type: application/json
+
+{
+    "productID":"24",
+    "productName":"laptop",
+    "price":20000,
+    "brand":"dell"
+}
+
+### product login
+POST http://localhost:4000/product-api/auth
+Content-Type: application/json
+
+{
+    "productID":"24"
+}
+
+### read all products
+GET http://localhost:4000/product-api/product
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0SUQiOiIyNGVnMTQiLCJpYXQiOjE3NzMyNDM0MzQsImV4cCI6MTc3MzI0MzQ0OX0.TcJcaWl0JgpUeSNmio_M7-cjx3m29yjxaxz5cIWUWmQ; Path=/; HttpOnly; SameSite=Lax
+
+### read all products by brand
+GET http://localhost:4000/product-api/product/24eg14
+
+### update a product 
+PUT http://localhost:4000/product-api/product/24eg06
+Content-Type: application/json
+
+{
+    "productID":"24",
+    "productName":"laptop",
+    "price":30000,
+    "brand":"dell"
+}
+
+### Delete a product by id
+DELETE http://localhost:4000/product-api/product/TV
