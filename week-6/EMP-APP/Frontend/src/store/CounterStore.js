@@ -7,11 +7,11 @@ export const useCounterStore=create((set)=>({
     newCounter:0,
     newCounter1:100,
     //add user state
-    user:{name:"Harish",email:"harish@gmail.com",age:20},
+    user:{name:"Vishnu",email:"vishnu@gmail.com",age:20},
     //change email
-    changeEmail:()=>set({...user,email:"harishraj@gmail.com"}),
+    changeEmail:()=>set({...user,email:"vishnuvar@gmail.com"}),
     //changename and age
-    chaneNameAndAge:()=>({...user,name:"HarishRaj",age:21}),
+    chaneNameAndAge:()=>({...user,name:"vishnuvar",age:21}),
     //function to modify the state
     incrementCounter:()=>set(state=>({newCounter:state.newCounter+1})),
     decrementCounter:()=>set(state=>({newCounter:state.newCounter-1})),
