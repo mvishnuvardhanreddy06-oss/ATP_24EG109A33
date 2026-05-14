@@ -8,6 +8,8 @@ function CreateEmp() {
 
   const navigate = useNavigate();
 
+  const API = import.meta.env.VITE_API_URL;
+
   const {
     register,
     handleSubmit,
@@ -22,7 +24,7 @@ function CreateEmp() {
 
       // API CALL
       const res = await fetch(
-        "http://localhost:3000/employee-api/employee",
+        `${API}/employee-api/employee`,
         {
           method: "POST",
           headers: {

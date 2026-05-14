@@ -6,6 +6,8 @@ function ListOfEmps() {
   const [emps, setEmps] = useState([]);
   const navigate = useNavigate();
 
+  const API = import.meta.env.VITE_API_URL;
+
   // goto employee
   const gotoEmployee = (empObj) => {
     navigate("/employee", { state: empObj });
@@ -20,7 +22,7 @@ function ListOfEmps() {
   const deleteEmpByID = async (id) => {
     try {
       let res = await axios.delete(
-        `http://localhost:3000/employee-api/employee/${id}`
+        `${API}/employee-api/employee/${id}`
       );
 
       if (res.status === 200) {
@@ -35,7 +37,7 @@ function ListOfEmps() {
   async function getEmps() {
     try {
       let res = await fetch(
-        "http://localhost:3000/employee-api/employees"
+        `${API}/employee-api/employees`
       );
 
       const contentType = res.headers.get("content-type");
