@@ -1,0 +1,58 @@
+body {
+    background-color: #b1e0e0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+.user-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header {
+    background-color: #3e7e7e;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    color: #3e7e7e;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.email {
+    color: #3e7e7e;
+}
+
+.comments {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #666;
+}

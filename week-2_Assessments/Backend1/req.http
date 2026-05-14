@@ -1,0 +1,72 @@
+//read all users
+GET http://localhost:3000/user-api/users
+
+###
+//read a user by id
+GET http://localhost:3000/user-api/users/1
+
+###
+//create user
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"SHIVA"
+}
+
+###
+//update user
+PUT http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"REDDY"
+}
+
+###
+DELETE http://localhost:3000/user-api/users/1
+
+// products//
+###
+GET http://localhost:3000/product-api/products
+###
+GET http://localhost:3000/product-api/products/hp
+###
+
+
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"victus",
+    "brand":"hp",
+    "price":65000
+}
+###
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "id":2,
+    "name":"macbook",
+    "brand":"apple",
+    "price":100000
+}
+###
+DELETE http://localhost:3000/product-api/products/2
+###
+PUT http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"hp11gen",
+    "brand":"hp",
+    "price":850000
+}
+
+
+
