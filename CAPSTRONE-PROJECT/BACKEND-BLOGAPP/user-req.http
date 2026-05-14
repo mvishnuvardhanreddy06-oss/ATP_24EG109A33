@@ -1,0 +1,47 @@
+### Register User
+POST http://localhost:5000/auth/users
+Content-Type: application/json
+
+{
+    "firstName":"shiva",
+    "lastName":"prasad",
+    "email":"prasad123@mail.com",
+    "password":"shiva",
+    "role":"USER",
+    "profileImageUrl":""
+}
+
+
+### User login
+post http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email":"prasad123@mail.com",
+    "password":"shiva"
+}
+
+### user logout
+GET  http://localhost:5000/auth/logout
+
+
+### read articles of all authors
+GET http://localhost:5000/user-api/articles
+
+### add comment by user to an article
+PUT http://localhost:5000/user-api/articles
+Content-Type: application/json
+
+{
+    "articleId":"69b5889b864838021061d459",
+    "comment":"worst"
+}
+
+### change passwoed
+PUT http://localhost:5000/auth/password
+Content-Type: application/json
+
+{
+    "currentPassword":"shiva1",
+    "newPassword":"shiva"
+}
