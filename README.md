@@ -1,8 +1,5 @@
 # MERN Stack Training Repository
-
-## 📌 Repository Overview
-
-This repository contains my complete MERN Stack training journey including:
+##  Repository Overview
 
 * Weekly assessments
 * JavaScript practice programs
@@ -15,7 +12,7 @@ The repository is organized week-by-week to track my learning progress and hands
 
 ---
 
-# 🚀 Technologies Used
+# Technologies Used
 
 ## Frontend
 
@@ -46,10 +43,10 @@ The repository is organized week-by-week to track my learning progress and hands
 
 ---
 
-# 📂 Repository Structure
+#  Repository Structure
 
 ```bash
-24EG109A56/
+24EG109A33/
 │
 ├── week-1_Assessments/
 ├── week-2_Assessments/
@@ -63,9 +60,9 @@ The repository is organized week-by-week to track my learning progress and hands
 
 ---
 
-# 📖 Weekly Learning Summary
+#  Weekly Learning Summary
 
-## ✅ Week 1 – JavaScript Basics
+##  Week 1 – JavaScript Basics
 
 Topics Covered:
 
@@ -87,7 +84,7 @@ Programs Included:
 
 ---
 
-## ✅ Week 2 – Advanced JavaScript & Backend Basics
+##  Week 2 – Advanced JavaScript & Backend Basics
 
 Topics Covered:
 
@@ -106,7 +103,7 @@ Projects Included:
 
 ---
 
-## ✅ Week 3 – Authentication & MongoDB
+##  Week 3 – Authentication & MongoDB
 
 Topics Covered:
 
@@ -125,7 +122,7 @@ Projects Included:
 
 ---
 
-## ✅ Week 4 – HTML Practice
+##  Week 4 – HTML Practice
 
 Topics Covered:
 
@@ -141,7 +138,7 @@ Assignments Included:
 
 ---
 
-## ✅ Week 5 – Frontend Development & React Basics
+##  Week 5 – Frontend Development & React Basics
 
 Topics Covered:
 
@@ -160,7 +157,7 @@ Projects Included:
 
 ---
 
-## ✅ Week 6 – React Advanced & Mini Projects
+##  Week 6 – React Advanced & Mini Projects
 
 Topics Covered:
 
@@ -187,9 +184,9 @@ Projects Included:
 
 ---
 
-# 🌟 Capstone MERN Project
+#  Capstone MERN Project
 
-## 📝 Blog Application
+##  Blog Application
 
 A full-stack MERN Blog Application with:
 
@@ -223,23 +220,18 @@ A full-stack MERN Blog Application with:
 
 ---
 
-# ⚙️ Installation & Setup
 
-## Clone Repository
-
-```bash
-git clone https://github.com/shivaprasadreddy2006/24EG109A56.git
 ```
 
 ## Navigate into Project
 
 ```bash
-cd 24EG109A56
+cd 24EG109A33
 ```
 
 ---
 
-# ▶️ Running React Projects
+#  Running React Projects
 
 ```bash
 npm install
@@ -248,7 +240,7 @@ npm run dev
 
 ---
 
-# ▶️ Running Backend Projects
+#  Running Backend Projects
 
 ```bash
 npm install
@@ -257,7 +249,7 @@ npm start
 
 ---
 
-# 📌 Learning Outcomes
+#  Learning Outcomes
 
 Through this training repository I learned:
 
@@ -273,17 +265,4 @@ Through this training repository I learned:
 
 ---
 
-# 👨‍💻 Author
 
-## Shivaprasad Reddy
-
-GitHub:
-[https://github.com/shivaprasadreddy2006](https://github.com/shivaprasadreddy2006)
-
----
-
-# ⭐ Final Note
-
-This repository represents my practical MERN Stack learning journey through weekly assessments, mini projects, and a complete capstone project.
-
-It demonstrates both frontend and backend development skills along with full-stack project integration.
