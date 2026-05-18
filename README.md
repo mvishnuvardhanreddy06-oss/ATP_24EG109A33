@@ -16,9 +16,9 @@ The repository is organized week-by-week to track my learning progress and hands
 
 ## Frontend
 
-* HTML5
+* HTML
 * CSS3
-* JavaScript (ES6+)
+* JavaScript
 * React.js
 * Vite
 * React Router
@@ -169,14 +169,14 @@ Topics Covered:
 
 Projects Included:
 
-### 🔹 Employee Mini Project
+### Employee Mini Project
 
 * Employee CRUD operations
 * React frontend
 * Express backend
 * MongoDB integration
 
-### 🔹 Counter & Context API Apps
+###  Counter & Context API Apps
 
 * Shared state management
 * Context API implementation
@@ -219,17 +219,9 @@ A full-stack MERN Blog Application with:
 * Cloudinary
 
 ---
-
-
-```
-
 ## Navigate into Project
 
-```bash
-cd 24EG109A33
-```
 
----
 
 #  Running React Projects
 
