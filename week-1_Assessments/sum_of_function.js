@@ -1,7 +1,5 @@
 /**
  * Function that receives an array and returns the sum of its elements.
- * @param {number[]} arr 
- * @returns {number} The sum of elements.
  */
 const findSum = (arr) => {
   return arr.reduce((acc, curr) => acc + curr, 0);
