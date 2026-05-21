@@ -12,8 +12,14 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ["https://24-eg-109-a56.vercel.app", "http://localhost:5173", "http://localhost:3000"],
-  credentials: true
+  origin: [
+    "https://24-eg-109-a33.vercel.app",
+    "https://24-eg-109-a56.vercel.app",
+    "https://atp-24eg109a33-1-8c9m.onrender.com",
+    "http://localhost:5173",
+    "http://localhost:3000",
+  ],
+  credentials: true,
 }));
 
 app.use(express.json());
@@ -73,7 +79,4 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`🚀 Backend API running on port ${PORT}`);
-});
+// Note: server is started inside startServer() after DB connects
