@@ -12,13 +12,26 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: [
-    "https://24-eg-109-a33.vercel.app",
-    "https://24-eg-109-a56.vercel.app",
-    "https://atp-24eg109a33-1-8c9m.onrender.com",
-    "http://localhost:5173",
-    "http://localhost:3000",
-  ],
+  origin: function (origin, callback) {
+    const allowedOrigins = [
+      "https://24-eg-109-a33.vercel.app",
+      "https://24-eg-109-a56.vercel.app",
+      "https://atp-24eg109a33-1-8c9m.onrender.com",
+      "http://localhost:5173",
+      "http://localhost:3000",
+    ];
+    
+    // Allow all Vercel preview deployments
+    if (origin && origin.includes("vercel.app")) {
+      return callback(null, true);
+    }
+    
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   credentials: true,
 }));
 
