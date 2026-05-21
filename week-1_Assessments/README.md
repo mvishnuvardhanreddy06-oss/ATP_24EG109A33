@@ -28,9 +28,7 @@ Example:
 ```bash
 node array_operations.js
 ```
-
 ## Code Standards
 All scripts have been enhanced to:
 - Use **ES6+ syntax** (`const`/`let`, arrow functions, template literals).
 - Implement **modern array methods** (`reduce`, `find`, `indexOf`).
-- Include **JSDoc comments** for better readability and maintainability.

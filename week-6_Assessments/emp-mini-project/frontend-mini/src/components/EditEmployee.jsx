@@ -13,6 +13,7 @@ function EditEmployee() {
 
   const { state } = useLocation();
   const navigate = useNavigate();
+  const API = import.meta.env.VITE_API_URL || "https://atp-24eg109a33-1-8c9m.onrender.com";
 
   // preload form data
   useEffect(() => {
@@ -28,7 +29,7 @@ function EditEmployee() {
   const saveModifiedEmp = async (modifiedEmp) => {
     try {
       const res = await axios.put(
-        `/employee-api/employee/${state._id}`,
+        `${API}/employee-api/employee/${state._id}`,
         modifiedEmp
       );
 

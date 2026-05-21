@@ -12,7 +12,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ["https://24-eg-109-a56.vercel.app"],
+  origin: ["https://24-eg-109-a56.vercel.app", "http://localhost:5173", "http://localhost:3000"],
   credentials: true
 }));
 
@@ -31,23 +31,30 @@ const PORT = process.env.PORT || 3000;
 
 // MongoDB connection
 async function connectDB() {
+  const dbURL = process.env.DB_URL;
+
+  if (!dbURL) {
+    throw new Error("DB_URL is not defined in environment variables");
+  }
+
+  await mongoose.connect(dbURL);
+}
+
+async function startServer() {
   try {
-    const dbURL = process.env.DB_URL;
-
-    if (!dbURL) {
-      throw new Error("DB_URL is not defined in environment variables");
-    }
-
-    await mongoose.connect(dbURL);
-
+    await connectDB();
     console.log("✅ Database connected successfully");
+
+    app.listen(PORT, () => {
+      console.log(`🚀 Backend API running on port ${PORT}`);
+    });
   } catch (error) {
     console.log("❌ Database connection failed:", error.message);
+    process.exit(1);
   }
 }
 
-// Connect DB
-connectDB();
+startServer();
 
 // Global error handler
 app.use((err, req, res, next) => {

@@ -8,7 +8,7 @@ function CreateEmp() {
 
   const navigate = useNavigate();
 
-  const API = import.meta.env.VITE_API_URL;
+  const API = import.meta.env.VITE_API_URL || "https://atp-24eg109a33-1-8c9m.onrender.com";
 
   const {
     register,
